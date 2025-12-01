@@ -9,7 +9,7 @@ def get_shelfs_book(number):
             "author": author
             }
         with open("Library.txt","a") as file:
-            file.write(f"Shelf_{shelf}: {book_format}\n")
+            file.write("Shelf {} {}\n".format(shelf, book_format))
     return "книги добавлены"
 
 def read_file_library():
